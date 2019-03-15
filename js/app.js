@@ -17,7 +17,7 @@ menuBtn.addEventListener('click', () => {
         showMenu = true;
     }
     else{
-        console.log('iin');
+        // console.log('lol');
         menuBtn.classList.remove('close');
         menu.classList.remove('show');
         menuBranding.classList.remove('show');
