@@ -1,11 +1,15 @@
 //Widescreen
 @include mediaXl{
-
+    .projects{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 //Desktops
 @include mediaLg{
-
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
@@ -43,6 +47,23 @@
         height: 125px !important;
         width: 125px  !important;
     }
+
+    .about-info{
+        grid-template-areas: 
+        'bioimg'
+        'bio';
+        
+        grid-template-columns: 1fr; 
+        font-size: 0.8em;
+
+        .bio-img{
+            width: 125px;
+            height: 125px;
+        }
+    }
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 //Mobiles
@@ -51,11 +72,14 @@
         margin-top: 10vh;
     }
     .lg-heading{
-        font-size: 4em !important;
+        font-size: 3em !important;
     }
     .sm-heading{
-        font-size: 1.2em !important;
+        font-size: 1.1em !important;
         width: 100%;
         margin: 0 10px !important;
+    }
+    .projects{
+        grid-template-columns: 1fr;
     }
 }
