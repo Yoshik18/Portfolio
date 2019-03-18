@@ -321,13 +321,8 @@ main#home h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
-#contact {
-  max-height: 100vh;
-  overflow: hidden;
-}
-
 #contact form {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 #contact form .small-in {
