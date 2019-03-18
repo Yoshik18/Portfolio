@@ -189,7 +189,6 @@ main{
 
 
 #contact{
-    overflow-y: scroll;
     form{
         padding-top: 10px;
         
@@ -208,7 +207,7 @@ main{
 
         .message{
             width: 100%;
-            max-height: 200px;
+            max-height: 150px;
             display: block;
             border: none;
             border-bottom: 2px solid $secondary-color;
