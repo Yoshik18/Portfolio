@@ -442,7 +442,8 @@ main#home h1 {
     width: 125px  !important;
   }
   .about-info {
-        grid-template-areas: 'bioimg' 'bio';
+        grid-template-areas: 'bioimg'
+ 'bio';
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     font-size: 0.8em;
