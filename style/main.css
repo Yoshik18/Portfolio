@@ -70,7 +70,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #363535;
+  background: #2e2e2e;
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
@@ -84,7 +84,7 @@
 }
 
 .menu-branding {
-  background: #3b3a3a;
+  background: #333333;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-transition: all 0.5s ease-in;
@@ -144,7 +144,7 @@ body {
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-  background-color: #3b3a3a;
+  background-color: #333333;
   color: #fff;
 }
 
@@ -162,7 +162,7 @@ body#bg-img::after {
   z-index: -1;
   height: 100%;
   width: 100%;
-  background: rgba(59, 58, 58, 0.9);
+  background: rgba(51, 51, 51, 0.9);
 }
 
 h1,
@@ -183,7 +183,7 @@ h2.sm-heading,
 h3.sm-heading {
   font-size: 1.5em;
   padding: 0.2em 1em;
-  background-color: #6e6d6d;
+  background-color: #666666;
 }
 
 a {
@@ -293,28 +293,95 @@ main#home h1 {
   opacity: 0.5;
 }
 
-.btn, .btn-light, .btn-dark {
+.btn, .btn-light, .btn-dark, #contact form .submit-dark {
   display: block;
   padding: 0.5em 1.5em;
   border: 0;
   margin-bottom: 0.5em;
   margin-left: 0.4em;
   width: 100%;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-.btn:hover, .btn-light:hover, .btn-dark:hover {
+.btn:hover, .btn-light:hover, .btn-dark:hover, #contact form .submit-dark:hover {
   color: white;
   background: #00f7ff;
 }
 
 .btn-light {
-  background: #a1a0a0;
+  background: #999999;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btn-dark {
-  background: #212121;
+  background: #1a1a1a;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+#contact {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+#contact form {
+  padding-top: 30px;
+}
+
+#contact form .small-in {
+  width: 100%;
+  display: block;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #00f7ff;
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+  margin: 30px 0;
+  color: white;
+}
+
+#contact form .message {
+  width: 100%;
+  max-height: 200px;
+  display: block;
+  border: none;
+  border-bottom: 2px solid #00f7ff;
+  background: transparent;
+  outline: none;
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+  margin: 30px 0;
+  color: white;
+}
+
+#contact form textarea::-webkit-input-placeholder {
+  font-size: 21px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+#contact form textarea:-ms-input-placeholder {
+  font-size: 21px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+#contact form textarea::-ms-input-placeholder {
+  font-size: 21px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+#contact form textarea::placeholder {
+  font-size: 21px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+#contact form .submit-dark {
+  font-size: 18px;
+  height: 40px;
+  background: #1a1a1a;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
@@ -322,7 +389,7 @@ main#home h1 {
 .main-footer {
   text-align: center;
   padding: 1em 0;
-  background: #212121;
+  background: #1a1a1a;
   color: white;
   height: 60px;
   border-bottom: 2px solid #00f7ff;
