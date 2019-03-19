@@ -35,6 +35,10 @@ $background-opacity: 0.9;
     color: #fff;
     background-color: $secondary-color;
 }
+.sec{
+    color: $secondary-color;
+    font-size: 25px;
+}
 *{
     box-sizing: border-box;
 }
@@ -104,6 +108,7 @@ main{
 }
 
 #about{
+    overflow: hidden;
     min-height: calc(100vh - 60px);
     position: relative;
     top: -10vh;
@@ -126,7 +131,7 @@ main{
     }
     .bio{
         grid-area: bio;
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 }
 
@@ -142,8 +147,7 @@ main{
 
         .item{
             margin-top: 75px;
-
-            
+    
             img{
                 margin: 0;
                 padding: 0;
@@ -151,6 +155,7 @@ main{
                 height: 200px;
                 border: 5px solid rgb(247, 247, 247);
                 @include easeIn();
+                border-radius: 7px;
 
                 &:hover{
                     opacity: 0.5;
@@ -238,6 +243,7 @@ main{
 }
 
 .main-footer{
+    margin-top: -75px;
     text-align: center;
     padding: 1em 0;
     background: darken($primary-color, 10);
